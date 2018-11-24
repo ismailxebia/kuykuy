@@ -1,0 +1,109 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/dynamicContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bottonNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:elevation="16dp"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:foregroundGravity="bottom"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/matching"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/icon_store"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/menu_store"
+                android:textColor="@drawable/selector_nav_text"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/watchList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/icon_news"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/menu_news"
+                android:textColor="@drawable/selector_nav_text"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rates"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/icon_chat"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/menu_chat"
+                android:textColor="@drawable/selector_nav_text"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/deals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/icon_cycle"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/menu_cycle"
+                android:textColor="@drawable/selector_nav_text"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/listing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/icon_profile"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/menu_profile"
+                android:textColor="@drawable/selector_nav_text"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
